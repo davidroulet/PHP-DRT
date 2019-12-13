@@ -9,13 +9,15 @@
 <?php
 $jour = array('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samdi', 'Dimenche');
 $moi = array('Janvier', 'Février', 'Mars', 'Avril', 'Mais', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
-$mois = mktime(0, 0, 0, $_GET[month], 1, $_GET[year]);
-$tile = $moi[$_GET[month] - 1];
+$Year=$_GET[year];
+$Mois=$_GET[month];
+$mois = mktime(0, 0, 0, $Mois, 1, $Year);
+$tile = $moi[$Mois - 1];
 echo("
 
 <div class=\"month\">
   <ul>
-    <li>$tile<br>$_GET[year]</li>
+    <li>$tile<br>$Year</li>
   </ul>
 </div>
 ")

@@ -1,0 +1,15 @@
+.grey{
+    background-color: #777777;
+}
+.TitleH{
+    height: 70px;
+}
+.imgH{
+    height: 60px;
+    margin-top: 5px;
+}
+.CentreH{
+    text-align: center;
+    font-size: 40px;
+margin-top: -60px;
+}
